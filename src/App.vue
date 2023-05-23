@@ -1,13 +1,15 @@
 <template>
    <v-app>
       <v-main>
-         <HelloWorld />
+         <!-- <HelloWorld /> -->
+         <TodoComp />
       </v-main>
    </v-app>
 </template>
  
 <script lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue'
+import TodoComp from './components/TodoComp.vue';
 import { mapStores, mapState } from 'pinia'
 // import { useCounterStore } from '@/stores/counter'
 // import stores from '@/stores'
@@ -17,7 +19,8 @@ import userStore from '@/stores/user';
 export default {
    name: 'App',
    components: {
-      HelloWorld
+      // HelloWorld,
+      TodoComp,
    },
 
    computed: {
@@ -29,7 +32,6 @@ export default {
 
    mounted() {
       // console.log(this.userStore.email)
-      console.log(this.$store.state);
    }
 }
 </script>

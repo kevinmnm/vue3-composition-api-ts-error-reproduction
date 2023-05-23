@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import { createPinia, setMapStoreSuffix } from 'pinia'
 import { loadFonts } from './plugins/webfontloader'
 import vuetify from './plugins/vuetify'
-import pinia from './plugins/pinia'
+// import pinia from './plugins/pinia'
 
 import App from './App.vue'
 import router from './router'
@@ -18,6 +18,7 @@ app
    .use(vuetify)
    .use(router)
    .use(store)
-   .use(pinia, store)
+   .use(store)
 
-app.mount('#app')
+   .mount('#app')
+
