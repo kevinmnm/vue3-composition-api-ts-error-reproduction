@@ -3,10 +3,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, component } from 'vue'
+computed 
+ref
 import { useTodoStore } from '@/stores/todo'
 const todoStore = useTodoStore()
-const todos = computed(() => todoStore.todos);
+todoStore
+component
+
+// const todos = computed(() => todoStore.todos);
 
 </script>
 
