@@ -1,6 +1,7 @@
-// Utilities
-import { createPinia } from 'pinia'
+// import user from "./user"
+// import counter from "./counter"
 
-export default createPinia()
-
-// import { useCounterStore } from '@/stores/counter'
+// export default {
+//    user,
+//    counter,
+// }

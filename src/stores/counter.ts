@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 
 export const useCounterStore = defineStore('counter', {
+// export default defineStore('counter', {
    state: () => ({
       count: 0,
       name: 'Eduardo'
@@ -14,3 +15,4 @@ export const useCounterStore = defineStore('counter', {
       },
    },
 })
+

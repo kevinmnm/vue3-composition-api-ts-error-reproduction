@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createPinia, setMapStoreSuffix } from 'pinia'
 import { loadFonts } from './plugins/webfontloader'
 import vuetify from './plugins/vuetify'
 import pinia from './plugins/pinia'
@@ -7,12 +7,11 @@ import pinia from './plugins/pinia'
 import App from './App.vue'
 import router from './router'
 
-// import './assets/main.css'
-
 const app = createApp(App)
 
 loadFonts()
 
+// setMapStoreSuffix('')
 const store = createPinia()
 
 app

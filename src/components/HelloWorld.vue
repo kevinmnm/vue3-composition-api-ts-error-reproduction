@@ -1,4 +1,3 @@
-
 <template>
    <v-container class="fill-height">
       <v-responsive class="d-flex align-center text-center fill-height">
@@ -24,7 +23,6 @@
                <v-btn color="primary" href="https://next.vuetifyjs.com/introduction/why-vuetify/#feature-guides"
                   min-width="228" rel="noopener noreferrer" size="x-large" target="_blank" variant="flat">
                   <v-icon icon="mdi-speedometer" size="large" start />
-
                   Get Started
                </v-btn>
             </v-col>
@@ -41,19 +39,9 @@
       </v-responsive>
    </v-container>
 </template>
- 
+
 <script lang="ts">
-import { mapStores } from 'pinia'
-import { useCounterStore } from '@/stores/counter'
-// useCounterStore();
-
 export default {
-   name: 'HelloWorld',
-
-   mounted() {
-      console.log('mounted')
-      console.log(this.$store.state)
-   }
+   name: 'HelloWorld'
 }
 </script>
- 
