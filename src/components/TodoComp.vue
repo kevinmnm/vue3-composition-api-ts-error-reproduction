@@ -3,15 +3,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, component } from 'vue'
-computed 
-ref
-import { useTodoStore } from '@/stores/todo'
-const todoStore = useTodoStore()
-todoStore
-component
+import { computed, ref, reactive } from 'vue'
 
-// const todos = computed(() => todoStore.todos);
+console.log({
+   computed,
+   ref,
+   reactive,
+});
 
 </script>
 
